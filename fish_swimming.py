@@ -65,28 +65,28 @@ player.showturtle()
 def move_right():
 	if player.xcor() < MAX_X:
 		x,y = player.pos()
-		player.goto(x+5,y)
+		player.goto(x+50,y)
 
 turtle.onkeypress(move_right,"Right")
 
 def move_left():
 	if player.xcor() > MIN_X:
 		x,y = player.pos()
-		player.goto(x-5,y)
+		player.goto(x-50,y)
 
 turtle.onkeypress(move_left,"Left")
 
 def move_down():
 	if player.xcor() > MIN_Y:
 		x,y = player.pos()
-		player.goto(x,y-5)
+		player.goto(x,y-50)
 
 turtle.onkeypress(move_down,"Down")
 
 def move_up():
 	if player.xcor() < MAX_Y:
 		x,y = player.pos()
-		player.goto(x,y+5)
+		player.goto(x,y+50)
 
 turtle.onkeypress(move_up,"Up")
 
